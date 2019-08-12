@@ -61,7 +61,7 @@ namespace NetHttp
                 case HttpMethodType.PUT:
                     return await client.PutAsync(url, new StringContent(data));
                 default:
-                    throw new System.Exception("This http method does't exist or is currently not supported.");
+                    throw new System.Exception("This http method doesn't exist or isn't currently supported.");
             }
             
         }
